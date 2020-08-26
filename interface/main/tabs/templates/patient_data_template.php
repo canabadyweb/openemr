@@ -75,6 +75,9 @@ switch ($search_any_type) {
                 <div>
                     <span data-bind="text:patient().str_dob()"></span>
                 </div>
+                <div data-bind="with: patient">
+                  <span data-bind="text: language"></span>
+                </div>
                 <!-- /ko -->
             </div>
         </div>
