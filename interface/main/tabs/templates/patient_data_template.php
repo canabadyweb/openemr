@@ -76,7 +76,7 @@ switch ($search_any_type) {
                 </div>
                 <div data-bind="with: patient">
                    <span data-bind="text: occupation"></span>
-                  (<span data-bind="text: language"></span>)
+                  (Lang: <span data-bind="text: language"></span>)
                 </div>
                 <!-- /ko -->
             </div>
