@@ -67,7 +67,6 @@ switch ($search_any_type) {
                 <a class="ptName" data-bind="click:refreshPatient,with: patient" href="#">
                     <span data-bind="text: pname()"></span>
                     (<span data-bind="text: pubpid"></span>)
-                    (<span data-bind="text: occupation"></span>)
                 </a>
                 <a href="#" data-bind="click:clearPatient" title="<?php echo xla("Clear") ?>">
                     <i class="fa fa-times"></i>
@@ -76,7 +75,8 @@ switch ($search_any_type) {
                     <span data-bind="text:patient().str_dob()"></span>
                 </div>
                 <div data-bind="with: patient">
-                  <span data-bind="text: language"></span>
+                   <span data-bind="text: occupation"></span>
+                  (<span data-bind="text: language"></span>)
                 </div>
                 <!-- /ko -->
             </div>
